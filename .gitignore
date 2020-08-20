@@ -1,3 +1,4 @@
 gemfile
 gemfile.lock
-/_site/*
+_site/*
+

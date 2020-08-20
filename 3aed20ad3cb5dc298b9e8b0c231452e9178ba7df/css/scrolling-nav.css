@@ -10,3 +10,18 @@ header {
 section {
   padding: 150px 0;
 }
+
+/*Set the background of the top banner to match our light gray */
+.bg-primary {
+	background: #8e9b97 !important
+}
+
+/*Set the background of the nav and footer to match our dark gray */
+.bg-dark {
+	background: #1e1e1e !important
+}
+
+/*Set the fonts to be the same size and fontface as the main site*/
+html, body {
+    font: 400 1em montserrat,Helvetica,Arial,sans-serif;
+}

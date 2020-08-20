@@ -9,12 +9,14 @@
 </head>
 
 <style>
+/*Set the fonts to be the same size and fontface as the main site*/
 
 body {
 
 	background-image: url('grunge_patterns.jpg');
 	background-attachment: fixed;
 	color: #333;
+	font: 400 1em montserrat,Helvetica,Arial,sans-serif;
 }
 
 .box {
@@ -33,6 +35,11 @@ body {
 	text-align: center;
 	margin: auto;
 
+}
+
+.text {
+	color: #FFFFFF;
+	font: 400 2em montserrat,Helvetica,Arial,sans-serif;
 }
 
 div.horizontal {
@@ -71,9 +78,12 @@ div.vertical {
 		<div class="horizontal">
 			<div class="vertical">
 				<div class="box">
-					<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="password" /> <br />
-					<button id="loginbutton" type="button">Enter</button>
-					<p id="wrongPassword" style="display: none">wrong password</p>
+					<p class="text" style="margin-bottom: 0px">Order Tracker Login</p>
+					<div>
+						<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="password" /> <br />
+						<button id="loginbutton" type="button">Enter</button>
+						<p id="wrongPassword" style="display: none">wrong password</p>
+					</div>
 				</div>
 			</div>
 		</div>
