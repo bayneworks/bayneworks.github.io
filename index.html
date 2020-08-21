@@ -5,6 +5,11 @@
 <title></title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
 
 </head>
 
@@ -13,7 +18,7 @@
 
 body {
 
-	background-image: url('grunge_patterns.jpg');
+	background-image: url('img/grunge_patterns.jpg');
 	background-attachment: fixed;
 	color: #333;
 	font: 400 1em montserrat,Helvetica,Arial,sans-serif;
@@ -38,6 +43,10 @@ body {
 }
 
 .text {
+	color: #FFFFFF;
+}
+
+.box-text {
 	color: #FFFFFF;
 	font: 400 2em montserrat,Helvetica,Arial,sans-serif;
 }
@@ -73,16 +82,52 @@ div.vertical {
 </style>
 
 <body>
+	  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="https://www.bayneworks.com/en/">Bayne HomeWorks</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://www.bayneworks.com/en/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html">Tracker</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://www.bayneworks.com/en/catalog/21418-Kitchen/">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://www.bayneworks.com/en/storelocator">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 	<div id="loginbox" class="lightbox" >
 		<div class="horizontal">
 			<div class="vertical">
-				<div class="box">
-					<p class="text" style="margin-bottom: 0px">Order Tracker Login</p>
-					<div>
-						<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="password" /> <br />
-						<button id="loginbutton" type="button">Enter</button>
-						<p id="wrongPassword" style="display: none">wrong password</p>
+				<div class="row">
+					<div class="box">
+			    		<div class="container text-center">
+					      <h2 class="text"><strong>PRODUCT AVAILABILITY NOTICE</strong></h2>
+					      <p class="h4 text">Due to the effects of COVID-19, the entirety of the appliance industry is experiencing a supply chain interruption.  Regional Distribution and Manufacturing inventory quantities are exhausted and not projected to return to pre-COVID levels until early 2021.  As a result, product backorders are to be expected with longer than usual wait times experienced.</p>
+					      <p class="lead"><a href="notice.html">Read the full statement here</a></p>
+					    </div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="box">
+						<p class="box-text" style="margin-bottom: 0px">Order Tracker Login</p>
+						<div>
+							<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="password" /> <br />
+							<button id="loginbutton" type="button">Enter</button>
+							<p id="wrongPassword" style="display: none">wrong password</p>
+						</div>
 					</div>
 				</div>
 			</div>
