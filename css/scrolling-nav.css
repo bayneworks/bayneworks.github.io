@@ -44,6 +44,16 @@ html, body {
 
 }
 
+@media (max-width: 575.98px) {
+  .lightbox {
+	position: static;
+	padding-top: 60px;
+  }
+  body {
+	  background: rgba(101, 101, 101, 0.7); margin: auto; padding: 12px;
+  }
+}
+
 .text {
 	color: #FFFFFF;
 }
